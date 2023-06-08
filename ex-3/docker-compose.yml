@@ -1,0 +1,16 @@
+version: "2"
+
+volumes:
+  ex3-logs:
+
+services:
+  server-ex-3:
+    image: ex-2
+
+    container_name: ex2-ex3
+
+    volumes:
+      - ex3-logs:/tmp
+
+    ports:
+      - 5000:5000
